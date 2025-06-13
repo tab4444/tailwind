@@ -3,3 +3,6 @@
 @theme {
   --font-inter: "Inter", sans-serif;
 }
+h1{
+  color: #1D202A;
+}
