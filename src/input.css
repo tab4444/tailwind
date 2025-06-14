@@ -3,7 +3,3 @@
 @theme {
   --font-inter: "Inter", sans-serif;
 }
-.content > main > div{
-  padding-left: 6.5rem;
-  padding-right: 7.5rem;
-}
