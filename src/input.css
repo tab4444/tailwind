@@ -3,6 +3,7 @@
 @theme {
   --font-inter: "Inter", sans-serif;
 }
-h1{
-  color: #1D202A;
+.content > main > div{
+  padding-left: 12.5rem;
+  padding-right: 12.5rem;
 }

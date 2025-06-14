@@ -14,16 +14,20 @@ dark-color: gray-950
 gray-color: gray-50
 blue: cyan-400    
 -->
+
 <body class="font-inter mr-0 bg-gray-50 text-gray-950 dark:bg-gray-950 dark:text-gray-50">
     <div class="isolate">
         <div class="max-w-screen overflow-x-hidden">
             <header
-                class="fixed inset-x-0 top-0 w-full flex z-10 flex-row justify-between items-center p-4 px-6 border-b border-white/10 text-sm h-[57px]">
+                class="fixed inset-x-0 top-0 w-full flex z-10 flex-row justify-between items-center p-4 px-6 border-b border-gray-950/10 dark:border-white/10 text-sm h-[57px]">
                 <div class="flex items-center gap-4">
-                    <a href="#"><img class="w-40" src="./src/assets/tailwindcss-logotype-white.svg" alt=""></a>
+                    <a class="dark:hidden" href="#"><img class="w-40" src="./src/assets/tailwindcss-logotype.svg"
+                            alt=""></a>
+                    <a class="hidden dark:block" href="#"><img class="w-40"
+                            src="./src/assets/tailwindcss-logotype-white.svg" alt=""></a>
                     <label class="hidden" for="version">Choose a version</label>
-                    <select name="version" class="text-gray-50">
-                        <option value="4.1">v4.1</option>
+                    <select name="version" class="text-gray-950 rounded-3xl bg-gray-200 text-xs px-2 py-1 w-14.5">
+                        <option selected value="4.1">v4.1</option>
                         <option value="3.4.17">v3.4.17</option>
                         <option value="2.2.19">v.2.2.19</option>
                         <option value="1.9.6">v1.9.6</option>
@@ -31,50 +35,60 @@ blue: cyan-400
                     </select>
                 </div>
                 <nav class="flex flex-row items-center gap-x-6">
-                    <button>"Search"</button>
+                    <button class="flex items-center flex-row gap-x-1 border rounded-3xl bg-gray-100 font-light border-gray-200 px-1 text-gray-500">
+                        <i class="text-xs fa-solid fa-magnifying-glass"></i>
+                        <p class="w-12">Ctrl <span>K</span></p>
+                    </button>
                     <a href="#">Docs</a>
                     <a href="#">Blog</a>
                     <a href="#">Showcase</a>
-                    <a class="flex items-center justify-center border border-cyan-500/50 w-full h-full bg-cyan-500/10 py-0.5 px-2 text-cyan-500" href="#">Plus</a>
-                    <a href="#">GitHub</a>
+                    <a class="flex items-center justify-center border border-blue-500/50 w-full h-full bg-cyan-500/10 py-0.5 px-2 text-sky-500"
+                        href="#">Plus</a>
+                    <a class="text-xl text-gray-400" href="#"><i class="fa-brands fa-github"></i></a>
                 </nav>
             </header>
-            <div
-                class="mt-14.25">
+            <div class="mt-14.25">
                 <div
-                    class="-z-1 fixed top-14.25 left-0 col-left w-10 h-screen bg-white/10 ml-17 border-x border-white/10">
+                    class="-z-1 fixed top-14.25 left-0 col-left w-10 h-screen bg-gray-200/40 dark:bg-white/10 ml-[10rem] border-x border-gray-200 dark:border-white/10">
                 </div>
-                <div class="mx-29">
+                <div class="content">
                     <main>
-                        <div>
-                            <span>text-6xl</span>
-                            <span>text-white</span>
-                            <span>tracking-tighter</span>
-                            <span>text-balance</span>
+                        <div class="font-mono font-thin text-xs/6 border-b border-gray-200 text-gray-400 ">
+                            <div class="px-2 flex gap-x-2 h-24 items-end">
+                                <span>text-6xl</span>
+                                <span class="dark:hidden">text-gray-950</span>
+                                <span class="dark:block hidden">text-white</span>
+                                <span>tracking-tighter</span>
+                                <span>text-balance</span>
+                            </div>
                         </div>
-                        <div>
-                            <h1>Rapidly building modern websites without ever leaving your HTML.</h1>
+                        <div class="border-b border-gray-200">
+                            <h1 class="text-8xl tracking-tighter text-balance px-2">Rapidly build modern websites without ever leaving your HTML.</h1>
                         </div>
-                        <div>
-                            <span>text-lg</span>
-                            <span>text-white</span>
-                            <span>font-medium</span>
+                        <div class="border-b border-gray-200 font-mono font-thin text-xs/6 text-gray-400">
+                            <div class="px-2 flex gap-x-2 h-12 items-end">
+                                <span>text-lg</span>
+                                <span>text-white</span>
+                                <span>font-medium</span>
+                            </div>
                         </div>
-                        <div>
-                            <p>A utility-first CSS framework packed with classes like <span
-                                    class="font-mono text-cyan-400">flex</span>, <span
-                                    class="font-mono text-cyan-400">pt-4</span>, <span
-                                    class="font-mono text-cyan-400">text-center</span> and
-                                <span class="font-mono text-cyan-400">rotate-90</span> that can be composed to build any
+                        <div class="border-b border-gray-200">
+                            <p class="px-2 text-lg font-medium text-gray-600 text-left max-w-[50%] leading-6">A utility-first CSS framework packed with classes like
+                                <span class="font-mono dark:text-cyan-400 text-sky-500 font-semibold">flex</span>, <span
+                                    class="font-mono dark:text-cyan-400 text-sky-500 font-semibold">pt-4</span>, <span
+                                    class="font-mono dark:text-cyan-400 text-sky-500 font-semibold">text-center</span> and
+                                <span class="font-mono dark:text-cyan-400 text-sky-500 font-semibold">rotate-90</span> that can be
+                                composed to build any
                                 design, directly in your markup.
                             </p>
                         </div>
-                        <div>
-                            <!-- empty -->
-                        </div>
-                        <div>
-                            <a href="#">Get Started</a>
-                            <button>Quick search Ctrl K</button>
+                        <div class="mt-8 border-y border-gray-200 flex flex-row gap-x-2">
+                            <a class="flex justify-center items-center px-2 w-28 h-10 rounded-3xl bg-gray-950 text-gray-50 font-semibold text-sm" href="#">Get started</a>
+                            <button class="flex flex-row items-center px-4 gap-x-2 w-80 border border-gray-200 rounded-3xl relative">
+                                <i class="text-xs fa-solid fa-magnifying-glass"></i>
+                                <p class="text-sm text-gray-400">Quick search</p>
+                                <p class="text-sm text-gray-400 absolute right-0 pr-4">Ctrl <span class="text-gray-600">K</span></p>
+                            </button>
                         </div>
                         <div>
                             <!-- empty -->
@@ -94,7 +108,7 @@ blue: cyan-400
                     <section>
 
                     </section>
-                    <footer class=""> 
+                    <footer class="">
 
                     </footer>
                     <div class="col-start-1 row-start-5 grid md:col-start-2">
@@ -102,11 +116,12 @@ blue: cyan-400
                     </div>
                 </div>
                 <div
-                    class="-z-1 fixed top-14.25 right-0 w-10 h-screen bg-white/10 mr-17 border-x border-white/10">
+                    class="-z-1 fixed top-14.25 right-0 w-10 h-screen bg-gray-200/40 dark:bg-white/10 mr-[10rem] border-x border-gray-200 dark:border-white/10">
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/bfee6bbf74.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
