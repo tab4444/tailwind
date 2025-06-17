@@ -183,9 +183,9 @@ blue: cyan-400
                                 features to make the developer experience as enjoyable as possible.</p>
                         </div>
                         <div
-                            class="border-b border-gray-200 dark:border-white/10 bg-gray-200 dark:bg-white/10 p-2 flex flex-row flex-wrap gap-2 *:p-8 *:rounded-2xl *:bg-gray-50 *:dark:bg-gray-950 *:border *:border-gray-300 *:dark:border-gray-700 ">
+                            class="grid w-full grid-flow-dense grid-cols-30 gap-2 border-b border-gray-200 dark:border-white/10 bg-gray-200 dark:bg-white/10 p-2 *:p-8 *:rounded-2xl *:bg-gray-50 *:dark:bg-gray-950 *:border *:border-gray-300 *:dark:border-gray-700 ">
                             <!-- responsive design section -->
-                            <section class="w-full">
+                            <section class="col-span-full">
                                 <div class="flex flex-row gap-x-6 py-4">
                                     <div class="flex items-center justify-center shrink-0">
                                         <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
@@ -227,7 +227,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- filters section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(50%-0.25rem)]">
+                            <section class="col-span-full md:col-span-15">
                                 <div class="flex flex-row gap-6 py-4">
                                     <div class="flex shrink-0 items-center justify-center">
                                         <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
@@ -269,9 +269,10 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- dark mode section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(50%-0.25rem)]">
-                                <div>
-                                    <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
+                            <section class="col-span-full md:col-span-15">
+                                <div class="flex flex-row gap-6 py-4">
+                                    <div class="flex items-center justify-center shrink-0">
+                                        <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -308,9 +309,10 @@ blue: cyan-400
                                             d="M43.843 28.2531C43.843 28.2531 43.843 28.253 43.843 28.2531ZM43.843 28.2531C43.8428 32.744 37.537 36.3848 29.7585 36.3848C21.9798 36.3848 15.6739 32.7441 15.6739 28.2531M43.843 28.2531C43.843 23.762 37.5371 20.1213 29.7585 20.1213C21.9798 20.1213 15.6739 23.762 15.6739 28.2531M43.843 28.2531L43.843 31.2531C43.843 35.7441 37.5371 39.3848 29.7584 39.3848C21.9797 39.3848 15.6738 35.7441 15.6738 31.2531L15.6739 28.2531M29.7579 33.5561C24.6848 33.5561 20.5723 31.1817 20.5723 28.2528C20.5723 26.2428 22.509 24.494 25.3637 23.5945C24.6514 24.3481 24.2465 25.2125 24.2465 26.1314C24.2465 29.0604 28.359 31.4347 33.4321 31.4347C35.0238 31.4347 36.521 31.201 37.8262 30.7897C36.2682 32.4379 33.2392 33.5561 29.7579 33.5561ZM30.3702 22.9495L30.1939 23.6619C30.117 23.973 29.6936 24.2175 29.1547 24.2619L27.9207 24.3637L29.1547 24.4655C29.6936 24.5099 30.117 24.7543 30.1939 25.0655L30.3702 25.7779L30.5465 25.0655C30.6235 24.7543 31.0469 24.5099 31.5857 24.4655L32.8197 24.3637L31.5857 24.2619C31.0469 24.2175 30.6235 23.973 30.5465 23.6619L30.3702 22.9495ZM35.2692 25.0708L35.0507 26.4584C34.9993 26.7848 34.5662 27.0481 34.0042 27.0944L32.8197 27.1921L34.0042 27.2898C34.5662 27.3361 34.9993 27.5994 35.0507 27.9258L35.2692 29.3134L35.4877 27.9258C35.5391 27.5994 35.9722 27.3361 36.5342 27.2898L37.7187 27.1921L36.5342 27.0944C35.9722 27.0481 35.5391 26.7848 35.4877 26.4584L35.2692 25.0708Z"
                                             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>
-                                    <div>
-                                        <h3>Dark mode</h3>
-                                        <p>If you’re not a fan of burning your retinas, just stick dark: in front of any
+                                    </div>
+                                    <div class="flex flex-col gap-y-2">
+                                        <h3 class="text-2xl font-semibold">Dark mode</h3>
+                                        <p class="font-light text-gray-300 text-sm/7">If you’re not a fan of burning your retinas, just stick dark: in front of any
                                             color to apply it in dark mode.</p>
                                     </div>
                                 </div>
@@ -319,7 +321,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- CSS variables section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(40%-0.25rem)]">
+                            <section class="col-span-full md:col-span-15 xl:col-span-12">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -435,7 +437,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- P3 colors section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(60%-0.25rem)]">
+                            <section class="col-span-full xl:col-span-18">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -590,7 +592,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- CSS grid layout section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(50%-0.25rem)]">
+                            <section class="col-span-full xl:col-span-15">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -613,7 +615,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- transitions and animations section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(50%-0.25rem)]">
+                            <section class="col-span-full xl:col-span-15">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -664,7 +666,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- cascade layers section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(33.2%-0.25rem)]">
+                            <section class="col-span-full md:col-span-15 xl:col-span-10">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -700,7 +702,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- logical properties section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(33.2%-0.25rem)]">
+                            <section class="col-span-full md:col-span-15 xl:col-span-10">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -767,7 +769,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- container queries section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(33.2%-0.25rem)]">
+                            <section class="col-span-full md:col-span-15 xl:col-span-10">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -809,7 +811,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- gradients -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(50%-0.25rem)]">
+                            <section class="col-span-full md:col-span-15">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
@@ -866,7 +868,7 @@ blue: cyan-400
                                 </div>
                             </section>
                             <!-- 3d transforms section -->
-                            <section class="p-8 rounded-2xl bg-gray-50 border border-gray-300 w-[calc(50%-0.25rem)]">
+                            <section class="col-span-full md:col-span-15">
                                 <div>
                                     <svg class="text-gray-950 [--site-background:var(--color-white)] dark:text-white dark:[--site-background:var(--color-gray-950)]"
                                         width="112" height="72" viewBox="0 0 112 72" fill="none"
