@@ -342,6 +342,9 @@
   .h-max {
     height: max-content;
   }
+  .h-min {
+    height: min-content;
+  }
   .h-screen {
     height: 100vh;
   }
@@ -387,17 +390,20 @@
   .w-\[70\%\] {
     width: 70%;
   }
-  .w-\[calc\(33\.2\%-0\.25rem\)\] {
-    width: calc(33.2% - 0.25rem);
+  .w-\[80\%\] {
+    width: 80%;
   }
-  .w-\[calc\(40\%-0\.25rem\)\] {
-    width: calc(40% - 0.25rem);
+  .w-\[90\%\] {
+    width: 90%;
   }
-  .w-\[calc\(50\%-0\.25rem\)\] {
-    width: calc(50% - 0.25rem);
+  .w-\[92\%\] {
+    width: 92%;
   }
-  .w-\[calc\(60\%-0\.25rem\)\] {
-    width: calc(60% - 0.25rem);
+  .w-\[95\%\] {
+    width: 95%;
+  }
+  .w-\[954\] {
+    width: 954;
   }
   .w-full {
     width: 100%;
@@ -438,20 +444,23 @@
   .flex-row {
     flex-direction: row;
   }
-  .flex-wrap {
-    flex-wrap: wrap;
-  }
   .items-center {
     align-items: center;
   }
   .items-end {
     align-items: flex-end;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
+  }
+  .justify-end {
+    justify-content: flex-end;
   }
   .justify-start {
     justify-content: flex-start;
@@ -544,9 +553,6 @@
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
-  .border-gray-300 {
-    border-color: var(--color-gray-300);
-  }
   .border-gray-950 {
     border-color: var(--color-gray-950);
   }
@@ -609,9 +615,6 @@
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
-  }
-  .p-8 {
-    padding: calc(var(--spacing) * 8);
   }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);
@@ -693,10 +696,6 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-sm\/6 {
-    font-size: var(--text-sm);
-    line-height: calc(var(--spacing) * 6);
-  }
   .text-sm\/7 {
     font-size: var(--text-sm);
     line-height: calc(var(--spacing) * 7);
@@ -756,9 +755,6 @@
   }
   .text-gray-50 {
     color: var(--color-gray-50);
-  }
-  .text-gray-200 {
-    color: var(--color-gray-200);
   }
   .text-gray-300 {
     color: var(--color-gray-300);
@@ -972,6 +968,12 @@
       content: var(--tw-content);
     }
   }
+  .first\:text-2xl {
+    &:first-child {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .hover\:bg-cyan-500\/15 {
     &:hover {
       @media (hover: hover) {
@@ -999,14 +1001,84 @@
       }
     }
   }
+  .nth-0\:text-2xl {
+    &:nth-child(0) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .nth-1\:flex {
+    &:nth-child(1) {
+      display: flex;
+    }
+  }
+  .nth-1\:shrink-0 {
+    &:nth-child(1) {
+      flex-shrink: 0;
+    }
+  }
+  .nth-1\:items-center {
+    &:nth-child(1) {
+      align-items: center;
+    }
+  }
+  .nth-1\:justify-center {
+    &:nth-child(1) {
+      justify-content: center;
+    }
+  }
+  .nth-1\:text-2xl {
+    &:nth-child(1) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .nth-1\:font-semibold {
+    &:nth-child(1) {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
+  .nth-2\:flex {
+    &:nth-child(2) {
+      display: flex;
+    }
+  }
+  .nth-2\:w-\[70\%\] {
+    &:nth-child(2) {
+      width: 70%;
+    }
+  }
+  .nth-2\:flex-col {
+    &:nth-child(2) {
+      flex-direction: column;
+    }
+  }
+  .nth-2\:gap-y-2 {
+    &:nth-child(2) {
+      row-gap: calc(var(--spacing) * 2);
+    }
+  }
+  .nth-2\:text-sm\/7 {
+    &:nth-child(2) {
+      font-size: var(--text-sm);
+      line-height: calc(var(--spacing) * 7);
+    }
+  }
+  .nth-2\:font-light {
+    &:nth-child(2) {
+      --tw-font-weight: var(--font-weight-light);
+      font-weight: var(--font-weight-light);
+    }
+  }
+  .nth-2\:text-gray-300 {
+    &:nth-child(2) {
+      color: var(--color-gray-300);
+    }
+  }
   .sm\:scroll-auto {
     @media (width >= 40rem) {
       scroll-behavior: auto;
-    }
-  }
-  .md\:col-span-10 {
-    @media (width >= 48rem) {
-      grid-column: span 10 / span 10;
     }
   }
   .md\:col-span-15 {
