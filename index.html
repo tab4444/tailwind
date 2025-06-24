@@ -23,16 +23,16 @@ blue: cyan-400
                 <div class="flex items-center gap-4">
                     <a class="dark:hidden" href="#"><img class="w-40" src="./src/assets/tailwindcss-logotype.svg"
                             alt=""></a>
-                    <a class="hidden dark:block" href="#"><img class="w-40"21
-                    <label class="hidden" for="version">Choose a version</label>
-                    <select name="version"
-                        class="text-gray-950 dark:text-gray-50 rounded-3xl bg-gray-200 dark:bg-white/10 hover:bg-white/15 transition-[background-color] duration-100 ease-in-out text-xs px-2 py-1 w-14.5">
-                        <option selected value="4.1">v4.1</option>
-                        <option value="3.4.17">v3.4.17</option>
-                        <option value="2.2.19">v.2.2.19</option>
-                        <option value="1.9.6">v1.9.6</option>
-                        <option value="0.7.4">v0.7.4</option>
-                    </select>
+                    <a class="hidden dark:block" href="#"><img class="w-40" 21 <label class="hidden"
+                            for="version">Choose a version</label>
+                        <select name="version"
+                            class="text-gray-950 dark:text-gray-50 rounded-3xl bg-gray-200 dark:bg-white/10 hover:bg-white/15 transition-[background-color] duration-100 ease-in-out text-xs px-2 py-1 w-14.5">
+                            <option selected value="4.1">v4.1</option>
+                            <option value="3.4.17">v3.4.17</option>
+                            <option value="2.2.19">v.2.2.19</option>
+                            <option value="1.9.6">v1.9.6</option>
+                            <option value="0.7.4">v0.7.4</option>
+                        </select>
                 </div>
                 <nav class="flex flex-row items-center gap-x-6">
                     <button
@@ -967,9 +967,13 @@ blue: cyan-400
                             </div>
                         </div>
                         <div class="border-b border-gray-200 dark:border-white/10">
-                            <p class="px-2 text-gray-600 dark:text-gray-400 text-base tracking-tight w-[50%]">Tailwind automatically removes all unused CSS when building for production, which means your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects ship less than 10kB of CSS to the client.</p>
+                            <p class="px-2 text-gray-600 dark:text-gray-400 text-base tracking-tight w-[50%]">Tailwind
+                                automatically removes all unused CSS when building for production, which means your
+                                final CSS bundle is the smallest it could possibly be. In fact, most Tailwind projects
+                                ship less than 10kB of CSS to the client.</p>
                         </div>
-                        <div class="mt-20 border-b border-gray-200 dark:border-white/10 bg-gray-200 dark:bg-white/10 p-2">
+                        <div
+                            class="mt-20 border-b border-gray-200 dark:border-white/10 bg-gray-200 dark:bg-white/10 p-2">
                             <div class="flex flex-col w-full bg-[#10141E] dark:border-white/10 border rounded-lg p-1">
                                 <div class="flex flex-row gap-x-2 p-2 items-center justify-start">
                                     <span class="w-3 h-3 rounded-full bg-zinc-700"></span>
@@ -978,27 +982,69 @@ blue: cyan-400
                                 </div>
 
                                 <div class="flex flex-col gap-1 w-full lg:flex-row">
-                                <div class="flex flex-col gap-0.5 xl:w-5/8 rounded-lg">
-                                    <div class="flex flex-col overflow-hidden rounded-lg bg-[#1C2029] h-[65%]">
-                                        <div class="flex flex-row items-center justify-start h-max p-1 gap-x-4 font-semibold text-xs bg-[#21252E] border-b border-white/5">
-                                            <span class="p-1.5 bg-zinc-700 rounded-md">index.html</span>
-                                            <span>app.css</span>
-                                            <span><i>package.json</i></span>
+                                    <div class="flex flex-col gap-1 xl:w-5/8 rounded-lg">
+                                        <div class="flex flex-col overflow-hidden rounded-lg bg-[#1C2029] h-[65%]">
+                                            <div
+                                                class="flex flex-row items-center justify-start h-max p-1 gap-x-4 font-semibold text-xs bg-[#21252E] border-b border-white/5">
+                                                <span class="p-1.5 bg-zinc-700 rounded-md">index.html</span>
+                                                <span>app.css</span>
+                                                <span><i>package.json</i></span>
+                                            </div>
+                                            <div
+                                                class="text-white font-mono text-sm rounded-lg shadow-lg p-4 space-y-1 min-h-full overflow-auto relative flex flex-col">
+                                                <code class="ml-4 before:absolute before:left-4 before:content-['1'] before:text-slate-500">
+                                                    <span class="text-slate-300">&lt;!<span class="text-pink-400">DOCTYPE</span> html&gt;</span>
+                                                </code>
+                                                <code class="ml-4 before:absolute before:left-4 before:content-['2'] before:text-slate-500 text-slate-300">
+                                                    <span>&lt;<span class="text-pink-400">html</span> lang=<span class="text-sky-300">"en"</span>&gt;</span>
+                                                </code>
+                                                <code class="ml-8 before:absolute before:left-4 before:content-['3'] before:text-slate-500">
+                                                    <span>&lt;<span class="text-pink-400">head</span>&gt;</span>
+                                                </code>
+                                                <code class="ml-12 before:absolute before:left-4 before:content-['4'] before:text-slate-500">
+                                                    <span>&lt;<span class="text-pink-400">meta</span> charset=<span class="text-sky-300">"UTF-8"</span> /&gt;</span>
+                                                </code>
+                                                <code class="ml-12 before:absolute before:left-4 before:content-['5'] before:text-slate-500">
+                                                    <span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span>
+                                                </code>
+                                                <code class="ml-12 before:absolute before:left-4 before:content-['6'] before:text-slate-500">
+                                                    <span>&lt;title&gt;Tailwind CSS&lt;/title&gt;</span>
+                                                </code>
+                                                <code class="ml-12 before:absolute before:left-4 before:content-['7'] before:text-slate-500">
+                                                    <span>&lt;link rel="stylesheet" href="/build.css" /&gt;</span>
+                                                </code>
+                                                <code class="ml-8 before:absolute before:left-4 before:content-['8'] before:text-slate-500">
+                                                    <span>&lt;/head&gt;</span>
+                                                </code>
+                                                <code class="ml-8 before:absolute before:left-4 before:content-['9'] before:text-slate-500">
+                                                    <span>&lt;body&gt;</span>
+                                                </code>
+                                                <code class="ml-12 before:absolute before:left-2 before:content-['10'] before:text-slate-500">
+                                                    <span>&lt;button class="flex items-center bg-blue-500 px-4 py-3 text-white hover:bg-blue-400"&gt;&lt;/button&gt;</span>
+                                                </code>
+                                                <code class="ml-8 before:absolute before:left-2 before:content-['11'] before:text-slate-500">
+                                                    <span>&lt;/body&gt;</span>
+                                                </code>
+                                                <code class="ml-4 before:absolute before:left-2 before:content-['12'] before:text-slate-500">
+                                                    <span>&lt;/html&gt;</span>
+                                                </code>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col overflow-hidden rounded-lg bg-[#1C2029] h-[35%]">
+                                            <div
+                                                class="flex flex-row items-center justify-start h-max p-1 gap-x-4 font-semibold text-xs bg-[#21252E] border-b border-white/5">
+                                                <span class="p-1.5 bg-zinc-700 rounded-md">Terminal</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="flex flex-col overflow-hidden rounded-lg bg-[#1C2029] h-[35%]">
-                                        <div class="flex flex-row items-center justify-start h-max p-1 gap-x-4 font-semibold text-xs bg-[#21252E] border-b border-white/5">
-                                            <span class="p-1.5 bg-zinc-700 rounded-md">Terminal</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex min-h-64 h-128 flex-col gap-2 xl:w-3/8 rounded-lg bg-[#1C2029]">
-                                    <div class="rounded-t-lg flex flex-row items-center justify-start h-max p-1 gap-x-4 font-semibold text-xs bg-[#21252E] border-b border-white/5">
+                                    <div class="flex min-h-64 h-128 flex-col gap-2 xl:w-3/8 rounded-lg bg-[#1C2029]">
+                                        <div
+                                            class="rounded-t-lg flex flex-row items-center justify-start h-max p-1 gap-x-4 font-semibold text-xs bg-[#21252E] border-b border-white/5">
                                             <span class="p-1.5 bg-zinc-700 rounded-md">build.css</span>
                                         </div>
+                                    </div>
                                 </div>
                             </div>
-                            </div>            
                         </div>
                     </section>
                     <footer class="">
