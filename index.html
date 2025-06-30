@@ -22,9 +22,9 @@ blue: cyan-400
                 class="z-10 fixed inset-x-0 top-0 w-full flex flex-row justify-between items-center p-4 px-6 border-b bg-gray-50 dark:bg-gray-950 border-gray-950/10 dark:border-white/10 text-sm h-[57px]">
                 <div class="flex items-center gap-4">
                     <a class="dark:hidden" href="#"><img class="w-40" src="./src/assets/tailwindcss-logotype.svg"
-                            alt=""></a>
-                    <a class="hidden dark:block" href="#"><img class="w-40" 21 <label class="hidden"
-                            for="version">Choose a version</label>
+                            alt="tailwind"></a>
+                    <a href="#" class="hidden dark:block"><img src="./src/assets/tailwindcss-logotype-white.svg" alt="tailwind" class="w-40"></a>
+                    <label class="hidden" for="version">Choose a version</label>
                         <select name="version"
                             class="text-gray-950 dark:text-gray-50 rounded-3xl bg-gray-200 dark:bg-white/10 hover:bg-white/15 transition-[background-color] duration-100 ease-in-out text-xs px-2 py-1 w-14.5">
                             <option selected value="4.1">v4.1</option>
@@ -50,12 +50,12 @@ blue: cyan-400
             </header>
             <div class="mt-14.25">
                 <div
-                    class="z-0 fixed top-14.25 left-[4rem] col-left w-10 h-screen bg-gray-200/40 dark:bg-white/10 border-x border-gray-200 dark:border-white/10">
+                    class="z-0 fixed top-14.25 left-0 2xl:left-[4rem] col-left w-10 h-screen bg-gray-200/40 dark:bg-white/10 border-x border-gray-200 dark:border-white/10">
                 </div>
                 <div class="content">
-                    <main>
+                    <main class="px-[2.5rem] 2xl:pl-[6.5rem] 2xl:pr-[7.5rem]">
                         <div
-                            class="pl-[6.5rem] pr-[7.5rem] font-mono font-thin text-xs/6 border-b border-gray-200 dark:border-white/10 text-gray-400 dark:text-gray-600">
+                            class="font-mono font-thin text-xs/6 border-b border-gray-200 dark:border-white/10 text-gray-400 dark:text-gray-600">
                             <div class="px-2 flex gap-x-2 h-24 items-end">
                                 <span>text-6xl</span>
                                 <span class="dark:hidden">text-gray-950</span>
@@ -64,19 +64,19 @@ blue: cyan-400
                                 <span>text-balance</span>
                             </div>
                         </div>
-                        <div class="pl-[6.5rem] pr-[7.5rem] border-b border-gray-200 dark:border-white/10">
+                        <div class="border-b border-gray-200 dark:border-white/10">
                             <h1 class="text-8xl tracking-tighter text-balance px-2">Rapidly build modern websites
                                 without ever leaving your HTML.</h1>
                         </div>
                         <div
-                            class="pl-[6.5rem] pr-[7.5rem] border-b border-gray-200 dark:border-white/10 font-mono font-thin text-xs/6 text-gray-400 dark:text-gray-600">
+                            class="border-b border-gray-200 dark:border-white/10 font-mono font-thin text-xs/6 text-gray-400 dark:text-gray-600">
                             <div class="px-2 flex gap-x-2 h-12 items-end">
                                 <span>text-lg</span>
                                 <span>text-white</span>
                                 <span>font-medium</span>
                             </div>
                         </div>
-                        <div class="pl-[6.5rem] pr-[7.5rem] border-b border-gray-200 dark:border-white/10">
+                        <div class="border-b border-gray-200 dark:border-white/10">
                             <p
                                 class="px-2 text-lg font-medium text-gray-600 dark:text-gray-400 text-left max-w-[50%] leading-6">
                                 A utility-first CSS framework packed with classes like
@@ -91,7 +91,7 @@ blue: cyan-400
                             </p>
                         </div>
                         <div
-                            class="pl-[6.5rem] pr-[7.5rem] mt-8 border-y border-gray-200 dark:border-white/10 flex flex-row gap-x-2">
+                            class="mt-8 border-y border-gray-200 dark:border-white/10 flex flex-row gap-x-2">
                             <a class="ml-2 flex justify-center items-center px-2 w-28 h-10 rounded-3xl bg-gray-950 dark:bg-gray-700 text-gray-50 font-semibold text-sm hover:bg-gray-600 transition-[background-color] duration-100 ease-in-out"
                                 href="#">Get started</a>
                             <button
@@ -103,7 +103,7 @@ blue: cyan-400
                             </button>
                         </div>
                         <div
-                            class="pl-[6.5rem] pr-[7.5rem] mt-24 relative border-y w-full border-gray-200 dark:border-white/10 flex flex-row gap-x-0">
+                            class="mt-24 relative border-y w-full border-gray-200 dark:border-white/10 flex flex-row gap-x-0">
                             <div class="w-[65%] bg-gray-200 dark:bg-gray-800 p-2">
                                 <div class="h-max w-full rounded-xl bg-gray-950 flex flex-col gap-0 p-1">
                                     <div class="flex flex-row gap-x-2 items-center justify-start p-2">
@@ -152,7 +152,7 @@ blue: cyan-400
                             </div>
                         </div>
                     </main>
-                    <section class="pl-[6.5rem] pr-[7.5rem]">
+                    <section class="px-[2.5rem] 2xl:pl-[6.5rem] 2xl:pr-[7.5rem]">
                         <div
                             class="mt-36 border-t border-b border-gray-200 dark:border-white/10 text-xs/6 text-gray-400 dark:text-gray-600">
                             <p class="px-2 font-mono text-sm font-bold uppercase text-sky-400">Why Tailwind CSS?</p>
@@ -167,7 +167,7 @@ blue: cyan-400
                         </div>
                         <div class="border-b border-gray-200 dark:border-white/10">
                             <h2
-                                class="px-2 text-5xl text-gray-950 dark:text-gray-50 font-medium text-balance tracking-tighter">
+                                class="px-2 text-[42px]/12 text-gray-950 dark:text-gray-50 font-medium text-balance tracking-tighter">
                                 Built for the modern web.</h2>
                         </div>
                         <div class="mt-6 border-b border-gray-200 dark:border-white/10">
@@ -942,7 +942,7 @@ blue: cyan-400
                             </section>
                         </div>
                     </section>
-                    <section class="pl-[6.5rem] pr-[7.5rem]">
+                    <section class="px-[2.5rem] 2xl:pl-[6.5rem] 2xl:pr-[7.5rem]">
                         <div
                             class="mt-36 border-t border-b border-gray-200 dark:border-white/10 text-xs/6 text-gray-400 dark:text-gray-600">
                             <p class="px-2 font-mono text-sm font-bold uppercase text-pink-400">How it works</p>
@@ -957,13 +957,13 @@ blue: cyan-400
                         </div>
                         <div class="border-b border-gray-200 dark:border-white/10">
                             <h2
-                                class="px-2 text-5xl text-gray-950 dark:text-gray-50 font-medium text-balance tracking-tighter">
+                                class="px-2 text-[42px]/12 text-gray-950 dark:text-gray-50 font-medium text-balance tracking-tighter">
                                 Ship faster and smaller.</h2>
                         </div>
                         <div class="mt-6 border-b border-gray-200 dark:border-white/10">
                             <div class="px-2 flex flex-row gap-x-2 font-mono text-xs/6 text-gray-600">
                                 <span>text-base</span>
-                                <span>text-gray-600</span>
+                                <span>text-gray-400</span>
                             </div>
                         </div>
                         <div class="border-b border-gray-200 dark:border-white/10">
@@ -1102,7 +1102,7 @@ blue: cyan-400
                             </div>
                         </div>
                     </section>
-                    <section class="pl-[6.5rem] pr-[7.5rem] *:border-b *:border-gray-200 dark:*:border-white/10 *:px-2">
+                    <section class="px-[2.5rem] 2xl:pl-[6.5rem] 2xl:pr-[7.5rem] *:border-b *:border-gray-200 dark:*:border-white/10 *:px-2">
                         <div
                             class="mt-36 border-t border-gray-200 dark:border-white/10 text-xs/6 text-gray-400 dark:text-gray-600">
                             <p class="font-mono text-sm font-bold uppercase text-pink-400">Tailwind in the wild</p>
@@ -1113,12 +1113,24 @@ blue: cyan-400
                             <span>tracking-tighter</span>
                         </div>
                         <div class="">
-                            <h2 class="text-5xl text-gray-950 dark:text-gray-50 font-medium text-balance tracking-tighter w-[40%]">
+                            <h2 class="text-[42px]/12 text-gray-950 dark:text-gray-50 font-medium text-balance tracking-tighter w-[40%]">
                                 Build whatever you want, without touching your CSS file.</h2>
                         </div>
                         <div class="mt-4 font-mono text-xs/6 text-gray-600 flex justify-start items-center flex-row gap-2">
                             <span>text-base</span>
-                            <span>text-white</span>
+                            <span>text-gray-400</span>
+                        </div>
+                        <div class="flex items-center justify-start">
+                            <p class="text-gray-600 dark:text-gray-400 text-base tracking-tight w-[50%]">Because Tailwind is so low-level, it never encourages you to design the same site twice. Some of your favorite sites are built with Tailwind, and you probably had no idea.</p>
+                        </div>
+                        <div class="mt-15 border-t bg-[#1C2029] p-2">
+                            <div class="h-128 grid grid-cols-30 gap-2 w-full rounded-2xl bg-gray-950 dark:bg-black overflow-clip border border-gray-200 dark:border-white/10">
+                                <div class="hidden lg:flex flex-col gap-2 bg-blue-500 lg:col-span-6"></div>
+                                <div class="flex flex-col gap-2 bg-red-500 col-span-12 sm:col-span-6 lg:col-span-5 xl:col-span-4"></div>
+                                <div class="hidden sm:flex flex-col gap-2 bg-green-500 sm:col-span-15 lg:col-span-12 xl:col-span-10"></div>
+                                <div class="hidden xl:flex flex-col gap-2 bg-yellow-500 xl:col-span-4"></div>
+                                <div class="flex flex-col gap-2 bg-pink-500 col-span-18 sm:col-span-9 lg:col-span-7 xl:col-span-6"></div>
+                            </div>
                         </div>
                     </section>
                     <footer class="">
@@ -1129,7 +1141,7 @@ blue: cyan-400
                     </div>
                 </div>
                 <div
-                    class="z-0 fixed top-14.25 right-[5rem] w-10 h-screen bg-gray-200/40 dark:bg-white/10 border-x border-gray-200 dark:border-white/10">
+                    class="z-0 fixed top-14.25 right-0 2xl:right-[5rem] w-10 h-screen bg-gray-200/40 dark:bg-white/10 border-x border-gray-200 dark:border-white/10">
                 </div>
             </div>
         </div>
